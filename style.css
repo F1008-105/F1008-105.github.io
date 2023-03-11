@@ -1,0 +1,9 @@
+body { 
+    background-color: rgb(227, 206, 247);
+    font-family: 'Jetbrains Mono','Roboto', sans-serif;
+    margin-left: 12%;
+}
+body a { 
+    color: rgb(97, 138, 179);
+    text-decoration: none;
+}
