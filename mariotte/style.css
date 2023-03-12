@@ -4,6 +4,13 @@ h1 {
     color:rgb(64, 36, 16)
 }
 
+a { 
+    color: rgb(64, 36, 16);
+    text-decoration: none;
+    transition: 0.5s;
+    margin-left: 10%;
+}
+
 canvas { 
     display: block;
     margin: 0 auto;
