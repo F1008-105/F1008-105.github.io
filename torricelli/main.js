@@ -7,7 +7,6 @@ let raise_val = 25.4;
 let base_val = 10,
   altura_val = 5;
 
-
 // Set up the water
 let aguah = b_altura;
 let base_area = Math.PI * Math.pow(b_base / 2, 2);
@@ -59,7 +58,6 @@ function draw() {
   setTimeout(draw, 10);
 }
 
-// Set up the canvas
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
