@@ -61,14 +61,14 @@ startButton.addEventListener("click", function () {
   let start_time = Date.now();
   let running = true;
 
-  let flow = true; 
+  let flow = true;
 
   restart.addEventListener("click", function () {
     square_height = ORIGINAL_HEIGHT; // reset the height of the square
   });
 
   stop_button.addEventListener("click", function () {
-    flow = !flow
+    flow = !flow;
     stop_button.style.backgroundColor = flow ? "#f8df85" : "#f7633e"; // if flow then normal color, if not then red
   });
   function mainLoop() {
@@ -80,7 +80,7 @@ startButton.addEventListener("click", function () {
       start_time = Date.now();
 
       // Make the square smaller
-      if (square_height >= 45 && slider.value < 1.29 && flow == true) {
+      if (square_height >= 45 && slider.value > 1 && flow == true) {
         square_height -= 2 * 1;
         console.log(square_height);
       }

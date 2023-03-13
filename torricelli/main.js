@@ -1,4 +1,5 @@
 // Set up the bottle and valve
+
 let pos_bx = 225,
   pos_by = 225;
 let b_base = 76.2,
@@ -60,6 +61,9 @@ function draw() {
 
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
+
+const title = document.getElementById("title");
+
 
 const CANVAS_WIDTH = 500;
 const CANVAS_HEIGHT = 500;
