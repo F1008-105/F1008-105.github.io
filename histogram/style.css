@@ -1,0 +1,39 @@
+/* Set font styles for the entire page */
+body {
+    background-color: rgb(227, 206, 247);
+    font-family: 'Jetbrains Mono','Roboto', sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Style the page title */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+
+  /* Style the canvas elements */
+  canvas {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* Style the "Volver" link */
+  a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
