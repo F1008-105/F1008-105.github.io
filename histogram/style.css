@@ -1,6 +1,6 @@
 /* Set font styles for the entire page */
 body {
-    background-color: rgb(227, 206, 247);
+    background-color: rgb(198, 215, 249);
     font-family: 'Jetbrains Mono','Roboto', sans-serif;
     line-height: 1.5;
   }
@@ -11,9 +11,10 @@ body {
     color: #333;
     text-align: center;
   }
+
   h2 {
-    font-size: 24px;
-    color: #333;
+    font-size: 20px;
+    color: #717171;
     text-align: center;
   }
 
