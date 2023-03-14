@@ -2,11 +2,11 @@
 var ctx = document.getElementById('hist_Mariotte2').getContext('2d');
 
 var data = {
-    labels: ['260', '280', '300', '320', '340'],
+    labels: ['280', '300', '320'],
     datasets: [
       {
         label: 'Frecuencia',
-        data: [1, 2, 3, 2, 1],
+        data: [1, 2, 1],
         backgroundColor: 'rgba(255, 222, 55, 0.2)',
         borderColor: 'rgba(255, 222, 55, 1)',
         borderWidth: 1,
@@ -14,7 +14,7 @@ var data = {
       },
       {
         label: 'Desviacion estandar',
-        data: [0.5, 1.5, 2.5, 1.5, 0.5],
+        data: [0.5, 2.5, 0.5],
         type: 'line',
         fill: false,
         borderColor: 'rgba(54, 162, 235, 1)',
