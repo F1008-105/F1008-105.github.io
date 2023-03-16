@@ -13,7 +13,7 @@ canvas {
     border: 1px solid black;
 }
 
-#stop-button { 
+.button { 
     display: block;
     margin: 0 auto;
     margin-top: 20px;
