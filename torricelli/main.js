@@ -21,9 +21,11 @@ let dt = (tf - ti) / n;
 let t = 0;
 let vel, G;
 
+let flow = true; 
+
 function draw() {
   // Calculate the new water level and velocity
-  if (aguah > raise_val + altura_val) {
+  if (aguah > raise_val + altura_val && flow) {
     vel = Math.sqrt(2 * 9.8 * aguah);
     G = vel * dt * Math.pow(altura_val / 2, 2) * Math.PI;
     agua_vd -= G;
@@ -53,17 +55,25 @@ function draw() {
 
   ctx.strokeRect(pos_bx, 110, b_base, b_altura);
 
+
   // Draw the final water level and graph
 
   t += dt;
   setTimeout(draw, 10);
 }
 
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 
 const title = document.getElementById("title");
 
+let stopButton = document.getElementById("stop-button"); 
+stopButton.addEventListener("click", function() { 
+  console.log(":D");
+  flow = !flow; 
+  stopButton.style.backgroundColor = flow ? "#f8df85" : "#f7633e";
+
+}); 
 
 const CANVAS_WIDTH = 500;
 const CANVAS_HEIGHT = 500;

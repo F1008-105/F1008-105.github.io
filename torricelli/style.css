@@ -1,10 +1,31 @@
 body { 
-    background-color: rgb(209, 247, 201);
+    background-color: #d1f7c9;
     font-family: 'Jetbrains Mono','Roboto', sans-serif;
     margin-left: 10%;
 }
 
 a { 
-    color: black;
+    color: #000000;
     text-decoration: none;
+}
+
+canvas { 
+    border: 1px solid black;
+}
+
+#stop-button { 
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(209, 247, 201);
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    font-family: "Jetbrains Mono", "Roboto";
 }
