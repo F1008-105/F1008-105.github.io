@@ -115,3 +115,7 @@ body {
 #restart:hover {
     background-color: rgb(255, 255, 255);
 }
+
+#explanation-text { 
+    margin-left: 10%; 
+}
