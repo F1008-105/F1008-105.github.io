@@ -8,6 +8,7 @@ let raise_val = 25.4;
 let base_val = 10,
   altura_val = 5;
 
+
 // Set up the water
 let aguah = b_altura;
 let base_area = Math.PI * Math.pow(b_base / 2, 2);
@@ -28,7 +29,11 @@ let flow = true;
 let startButton = document.getElementById("start-button");
 elementsToRender.style.display = "none";
 
-// When pressing start: 
+let cube_size = 10;
+let cube_pos_x = pos_bx + b_base - cube_size;
+let cube_pos_y = canvas.height - pos_by - cube_size;
+
+// When pressing start:
 startButton.addEventListener("click", function () {
   canvas.style.display = "block";
   startButton.style.display = "none";
@@ -69,7 +74,7 @@ startButton.addEventListener("click", function () {
     // Draw the final water level and graph
 
     t += dt;
-    setTimeout(draw, 10);
+    setTimeout(draw, 20);
   }
 
   let ctx = canvas.getContext("2d");

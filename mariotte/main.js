@@ -40,6 +40,7 @@ startButton.addEventListener("click", function () {
   const BLUE = "#99bbff";
   const BLACK = "#000000";
   const WHITE = "#ffffff";
+  const RED = "#db2c38"
 
   const ORIGINAL_HEIGHT = 150;
   const ORIGINAL_WIDTH = 100;
@@ -117,6 +118,7 @@ startButton.addEventListener("click", function () {
       container_height * 1.1
     );
 
+    ctx.strokeStyle = BLACK; 
     // Draw the valve
     ctx.strokeRect(valv_x, valv_y, valv_width, valv_height);
 

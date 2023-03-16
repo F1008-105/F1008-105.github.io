@@ -1,10 +1,41 @@
-body { 
-    background-color: #f7c9ca;
-    font-family: 'Jetbrains Mono','Roboto', sans-serif;
-    margin-left: 10%;
-}
+/* Set font styles for the entire page */
 
-a { 
-    color: #564471;
+body {
+    background-color: rgb(249, 198, 198);
+    font-family: 'Jetbrains Mono','Roboto', sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Style the page title */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #717171;
+    text-align: center;
+  }
+
+  /* Style the canvas elements */
+  canvas {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* Style the "Volver" link */
+  a {
+    color: #333;
     text-decoration: none;
-}
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
