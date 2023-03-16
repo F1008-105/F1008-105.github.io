@@ -3,24 +3,24 @@ var ctx = document.getElementById('hist_Torricelli').getContext('2d');
 
 // Definar la data para el histograma
 var data = {
-  labels: ['26', '28', '30', '32', '34'],
+  labels: ['33', '34', '35', '36', '37'],
   datasets: [
     {
     label: 'Frecuencia',
-    data: [0, 1, 2, 1, 0],
+    data: [2, 1, 5, 6, 5],
     backgroundColor: 'rgba(255, 222, 55, 0.2)',
     borderColor: 'rgba(255, 222, 55, 1)',
     borderWidth: 1,
     yAxisID: 'axis_izq'
   }, {
-    label: 'Desviacion estandar',
-    data: [0.5, 1.5, 2.5, 1.5, 0.5],
+    label: 'Distribución normal',
+    data: [0.02, 0.08, 0.21, 0.31, 0.24],
     type: 'line',
     fill: false,
     borderColor: 'rgba(54, 162, 235, 1)',
     borderWidth: 1,
-    pointRadius: 0,
-    yAxisID: 'axis_izq',
+    pointRadius: 5,
+    yAxisID: 'axis_right',
     lineTension: 0.4
   }
 ]
@@ -42,8 +42,16 @@ var options = {
         ticks: {
           beginAtZero: true
         },
+      },{
+        id:'axis_der',
+        type: 'linear',
+        position: 'right',
+        ticks: {
+          beginAtZero: true
+        },
         stacked: true
-      }]
+      }
+    ]
   }
 };
 

@@ -1,31 +1,31 @@
 // Conseguir el elemento del canvas
 var ctx = document.getElementById('hist_Mariotte2').getContext('2d');
 
-var data = {
-    labels: ['280', '300', '320'],
+var mardata = {
+    labels: ['225', '229', '233'],
     datasets: [
       {
         label: 'Frecuencia',
-        data: [1, 2, 1],
+        data: [2, 2, 1],
         backgroundColor: 'rgba(255, 222, 55, 0.2)',
         borderColor: 'rgba(255, 222, 55, 1)',
         borderWidth: 1,
         yAxisID: 'left-y-axis'
       },
       {
-        label: 'Desviacion estandar',
-        data: [0.5, 2.5, 0.5],
+        label: 'Distribución normal',
+        data: [0.08, 0.07, 0.03],
         type: 'line',
         fill: false,
         borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1,
-        pointRadius: 0,
-        yAxisID: 'left-y-axis',
+        pointRadius: 5,
+        yAxisID: 'right-y-axis',
         lineTension: 0.4
       }
     ]
   };
-  var options = {
+  var maroptions = {
     scales: {
       xAxes: [{
         ticks: {
@@ -38,16 +38,26 @@ var data = {
           type: 'linear',
           position: 'left',
           ticks: {
+            min: 0.00, // modify this line to set the minimum value to 0.00
+            max: 0.18,
+            sizestep: 0.03
+          },
+        }, {
+          id: 'right-y-axis',
+          type: 'linear',
+          position: 'right',
+          ticks: {
             beginAtZero: true
           },
           stacked: true
-        }]
+        }
+      ]
     }
   };
   var hist_Mariotte = new Chart(ctx, {
     type: 'bar',
-    data: data,
-    options: options
+    data: mardata,
+    options: maroptions
   });
   
   
