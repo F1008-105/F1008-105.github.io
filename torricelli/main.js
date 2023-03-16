@@ -85,7 +85,7 @@ startButton.addEventListener("click", function () {
   stopButton.addEventListener("click", function () {
     console.log(":D");
     flow = !flow;
-    stopButton.style.backgroundColor = flow ? "#f8df85" : "#f7633e";
+    stopButton.style.backgroundColor = flow ? "#f8df85" : "#d1f7c9";
   });
 
   const CANVAS_WIDTH = 500;
