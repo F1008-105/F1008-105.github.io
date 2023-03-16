@@ -119,3 +119,8 @@ body {
 #explanation-text { 
     margin-left: 10%; 
 }
+
+#exception { 
+    margin-left: 0%; 
+    text-decoration: underline;
+}
