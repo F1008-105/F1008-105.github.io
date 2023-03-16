@@ -5,7 +5,7 @@ const speed_slider = document.getElementById("speed-slider");
 const speed_description = document.getElementById("speed-description");
 const restart = document.getElementById("restart");
 const stop_button = document.getElementById("stop");
-explanation_text = document.getElementById("explanation-text"); 
+explanation_text = document.getElementById("explanation-text");
 
 slider_text.style.display = "none";
 slider.style.display = "none";
@@ -14,8 +14,7 @@ speed_description.style.display = "none";
 restart.style.display = "none";
 stop_button.style.display = "none";
 canv.style.border = "none";
-explanation_text.style.display = "none"; 
-
+explanation_text.style.display = "none";
 
 const startButton = document.getElementById("start-button");
 
@@ -29,7 +28,7 @@ startButton.addEventListener("click", function () {
   speed_description.style.display = "block";
   restart.style.display = "block";
   stop_button.style.display = "block";
-  explanation_text.style.display = "block"; 
+  explanation_text.style.display = "block";
 
   // Set the dimensions of the canvas
   const CANVAS_WIDTH = 500;
@@ -44,7 +43,7 @@ startButton.addEventListener("click", function () {
   const BLUE = "#99bbff";
   const BLACK = "#000000";
   const WHITE = "#ffffff";
-  const RED = "#db2c38"
+  const RED = "#db2c38";
 
   const ORIGINAL_HEIGHT = 150;
   const ORIGINAL_WIDTH = 100;
@@ -85,7 +84,7 @@ startButton.addEventListener("click", function () {
       start_time = Date.now();
 
       // Make the square smaller
-      if (square_height >= 45 && slider.value > 1 && flow == true) {
+      if (square_height >= 45 && slider.value > 1.25 && flow == true) {
         square_height -= 2 * 1;
         console.log(square_height);
       }
@@ -122,7 +121,7 @@ startButton.addEventListener("click", function () {
       container_height * 1.1
     );
 
-    ctx.strokeStyle = BLACK; 
+    ctx.strokeStyle = BLACK;
     // Draw the valve
     ctx.strokeRect(valv_x, valv_y, valv_width, valv_height);
 
