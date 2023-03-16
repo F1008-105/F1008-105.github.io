@@ -3,3 +3,8 @@ body {
     font-family: 'Jetbrains Mono','Roboto', sans-serif;
     margin-left: 10%;
 }
+
+a { 
+    color: #564471;
+    text-decoration: none;
+}
